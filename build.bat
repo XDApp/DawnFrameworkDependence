@@ -5,7 +5,7 @@ echo GLEW has been built successfully!
 cd glfw-3.1.1
 mkdir build
 cd build
-cmake  .. 
+cmake  -G "Visual Studio 12 2013 Win64" .. 
 cd ..
 cd ..
 msbuild /property:Configuration="Release" /property:Platform=x64 ".\glfw-3.1.1\build\GLFW.sln"
